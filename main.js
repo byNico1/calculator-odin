@@ -7,4 +7,15 @@ let firstNumber;
 let operator;
 let secondNumber;
 
-const operate = (fNumber, operator, sNumber) => {};
+const operate = (fNumber, operator, sNumber) => {
+  switch (operator) {
+    case "+":
+      return add(fNumber, sNumber);
+    case "-":
+      return substract(fNumber, sNumber);
+    case "*":
+      return multiply(fNumber, sNumber);
+    case "/":
+      return divide(fNumber, sNumber);
+  }
+};
